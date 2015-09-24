@@ -1,31 +1,15 @@
 
 def fizzbuzz(num)
-	
-	if verifica_se_fiz(num) and verifica_se_buzz(num) then
-		return 'fizzbuzz'
-	end
-
-	if verifica_se_fiz(num) then
-		return 'fizz'
-	end
-
-	if verifica_se_buzz(num) then
-		return 'buzz'
-	end
-	
+  return 'fizzbuzz' if verifica_se_fiz(num) and verifica_se_buzz(num)
+	return 'fizz' if verifica_se_fiz(num)
+	return 'buzz' if verifica_se_buzz(num)
 	num
 end
 
 def verifica_se_fiz(num)
-	if num % 3 == 0 then
-		return true
-	end
-	return false
+	num % 3 == 0
 end
 
 def verifica_se_buzz(num)
-	if num % 5 == 0 then
-		return true
-	end
-	return false
+	num % 5 == 0
 end
