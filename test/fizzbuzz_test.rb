@@ -5,6 +5,9 @@ class FizzbuzzTest < Test::Unit::TestCase
 
 	def test_fizzbuzz
 		assert_equal(1, fizzbuzz(1))
+		assert_equal(7, fizzbuzz(7))
+		assert_equal(13, fizzbuzz(13))
+		assert_equal(17, fizzbuzz(17))
 	end
 
 	def test_retornafizz

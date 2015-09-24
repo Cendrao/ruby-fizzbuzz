@@ -1,0 +1,5 @@
+require_relative "./lib/fizzbuzz.rb"
+
+task :fizzbuzz, [:num] do |t, args|
+	puts (fizzbuzz args["num"] )
+end
