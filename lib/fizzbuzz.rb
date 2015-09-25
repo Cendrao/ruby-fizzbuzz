@@ -1,6 +1,5 @@
 
 def fizzbuzz(num)
-	num = num.to_i
   return 'fizzbuzz' if verifica_se_fiz(num) and verifica_se_buzz(num)
 	return 'fizz' if verifica_se_fiz(num)
 	return 'buzz' if verifica_se_buzz(num)
