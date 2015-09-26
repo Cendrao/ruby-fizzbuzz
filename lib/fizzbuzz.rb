@@ -1,15 +1,23 @@
 
-def fizzbuzz(num)
-  return 'fizzbuzz' if verifica_se_fiz(num) and verifica_se_buzz(num)
-	return 'fizz' if verifica_se_fiz(num)
-	return 'buzz' if verifica_se_buzz(num)
+def print(from,to)
+	
+	(from..to).to_a.map{|a| check_num(a) }.join(",")
+	
+end
+
+
+
+def check_num(num)
+  return 'fizzbuzz' if check_fizz(num) and check_buzz(num)
+	return 'fizz' if check_fizz(num)
+	return 'buzz' if check_buzz(num)
 	num
 end
 
-def verifica_se_fiz(num)
+def check_fizz(num)
 	num % 3 == 0
 end
 
-def verifica_se_buzz(num)
+def check_buzz(num)
 	num % 5 == 0
 end
