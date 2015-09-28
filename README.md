@@ -7,7 +7,7 @@ Trying to do some tests with ruby test!
 To run the tests just do from root:
 
 ```
-ruby /test/fizzbuzz_test.rb
+rake test
 ```
 
 
@@ -29,4 +29,4 @@ Next Steps:
 -----
 
 * Make a FizzBuzz a beautifull class
-* Make rake for the tests
+* ~~Make rake for the tests~~
