@@ -1,5 +1,8 @@
 require 'test/unit'
+require 'coveralls'
 require_relative "../lib/fizzbuzz"
+
+Coveralls.wear!
 
 class FizzbuzzTest < Test::Unit::TestCase
 
@@ -34,6 +37,7 @@ class FizzbuzzTest < Test::Unit::TestCase
 	def test_should_print_sequence
 		assert_equal('1,2,fizz,4,buzz,fizz,7,8,fizz,buzz', print(1,10))
 	end
+
 
 
 

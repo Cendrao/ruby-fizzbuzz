@@ -1,4 +1,7 @@
 Fizz Buzz with TDD
+
+[![Coverage Status](https://coveralls.io/repos/Cendrao/ruby-fizzbuzz/badge.svg?branch=master&service=github)](https://coveralls.io/github/Cendrao/ruby-fizzbuzz?branch=master)
+
 ===
 
 

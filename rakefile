@@ -2,7 +2,7 @@ require 'rake/testtask'
 require_relative "./lib/fizzbuzz.rb"
 
 task :fizzbuzz, [:num] do |t, args|
-	puts (fizzbuzz args["num"].to_i)
+	puts (check_num args["num"].to_i)
 end
 
 task :print, [:from, :to] do |t,args|
