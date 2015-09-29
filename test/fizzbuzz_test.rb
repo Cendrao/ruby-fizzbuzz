@@ -1,12 +1,13 @@
 require 'test/unit'
-require 'coveralls'
+
 require_relative "../lib/fizzbuzz"
 
-
+require 'coveralls'
+Coveralls.wear!
 
 class FizzbuzzTest < Test::Unit::TestCase
 
-	Coveralls.wear!
+
 
 	def test_fizzbuzz
 		assert_equal(1, check_num(1))
@@ -29,6 +30,8 @@ class FizzbuzzTest < Test::Unit::TestCase
 	def test_multiplo_de_5_retorna_buzz
 		assert_equal('buzz', check_num(5))
 		assert_equal('buzz', check_num(10))
+		assert_equal('buzz', check_num(20))
+
 	end
 
 	def test_multiplo_de_3_e_5_retorna_fizzbu
