@@ -2,9 +2,11 @@ require 'test/unit'
 require 'coveralls'
 require_relative "../lib/fizzbuzz"
 
-Coveralls.wear!
+
 
 class FizzbuzzTest < Test::Unit::TestCase
+
+	Coveralls.wear!
 
 	def test_fizzbuzz
 		assert_equal(1, check_num(1))
