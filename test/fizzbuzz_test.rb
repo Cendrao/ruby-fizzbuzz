@@ -1,12 +1,11 @@
-require 'test/unit'
-
-require_relative "../lib/fizzbuzz"
 
 require 'coveralls'
 Coveralls.wear!
 
-class FizzbuzzTest < Test::Unit::TestCase
+require 'test/unit'
+require_relative "../lib/fizzbuzz"
 
+class FizzbuzzTest < Test::Unit::TestCase
 
 
 	def test_fizzbuzz

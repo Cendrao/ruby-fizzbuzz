@@ -1,11 +1,7 @@
 
-def print(from,to)
-	
-	(from..to).to_a.map{|a| check_num(a) }.join(",")
-	
+def print(from,to)	
+	(from..to).to_a.map{|a| check_num(a) }.join(",")	
 end
-
-
 
 def check_num(num)
   return 'fizzbuzz' if check_fizz(num) and check_buzz(num)
