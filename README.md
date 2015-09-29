@@ -4,10 +4,16 @@ Fizz Buzz with TDD
 
 Trying to do some tests with ruby test!
 
-To run the tests just do from root:
+First install dependencies
 
 ```
-rake test
+bundle install
+```
+
+To run the tests do:
+
+```
+bundle exec rake test
 ```
 
 
