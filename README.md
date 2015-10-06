@@ -25,6 +25,9 @@ To see the methods running you can use print task, with from and to parameters t
 rake print[from, to]
 ```
 
+If you are using oh-my-zsh, use `rake 'print[from,to]'` instead
+
+
 Or fizzbuzz task, to see a single number
 
 ```
