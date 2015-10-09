@@ -25,19 +25,18 @@ To see the methods running you can use print task, with from and to parameters t
 rake print[from, to]
 ```
 
-If you are using oh-my-zsh, use `rake 'print[from,to]'` instead
+If you are using oh-my-zsh, use `rake 'print[from,to]'` instead.
 
-
-Or fizzbuzz task, to see a single number
+Now, FizzBuzz is a class, if you need it in your code, you should initialize it, and use the method print:
 
 ```
-rake fizzbuzz[num]
-```
-
+fizzB = FizzBuzz.new(from,to)
+fizzB.print
+``
 
 
 Next Steps:
 -----
 
-* Make a FizzBuzz a beautifull class
+* ~~Make a FizzBuzz a beautifull class~~
 * ~~Make rake for the tests~~
