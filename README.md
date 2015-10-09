@@ -32,7 +32,7 @@ Now, FizzBuzz is a class, if you need it in your code, you should initialize it,
 ```
 fizzB = FizzBuzz.new(from,to)
 fizzB.print
-``
+```
 
 
 Next Steps:
