@@ -7,42 +7,19 @@ require_relative "../lib/fizzbuzz"
 
 class FizzbuzzTest < Test::Unit::TestCase
 
-
-	def test_fizzbuzz
-		assert_equal(1, check_num(1))
-		assert_equal(7, check_num(7))
-		assert_equal(13, check_num(13))
-		assert_equal(17, check_num(17))
+	def test_should_print_sequence_from1_to_10
+		fizzB = FizzBuzz.new(1,10)
+		assert_equal('1,2,fizz,4,buzz,fizz,7,8,fizz,buzz', fizzB.print())
 	end
 
-	def test_retornafizz
-		assert_equal('fizz', check_num(3))
+	def test_should_print_sequence_from1_to30
+		fizzB = FizzBuzz.new(1,30)
+		assert_equal('1,2,fizz,4,buzz,fizz,7,8,fizz,buzz,11,fizz,13,14,fizzbuzz,16,17,fizz,19,buzz,fizz,22,23,fizz,buzz,26,fizz,28,29,fizzbuzz', fizzB.print())
 	end
 
-	def test_multiplo_de_3_retorna_fizz
-		assert_equal('fizz', check_num(6))
-		assert_equal('fizz', check_num(9))
-		assert_equal('fizz', check_num(12))
-		assert_equal('fizz', check_num(18))
+	def test_shoul_print_sequence_from10_to1
+		fizzB = FizzBuzz.new(10,1)
+		assert_equal('buzz,fizz,8,7,fizz,buzz,4,fizz,2,1', fizzB.print)
 	end
-
-	def test_multiplo_de_5_retorna_buzz
-		assert_equal('buzz', check_num(5))
-		assert_equal('buzz', check_num(10))
-		assert_equal('buzz', check_num(20))
-
-	end
-
-	def test_multiplo_de_3_e_5_retorna_fizzbu
-		assert_equal('fizzbuzz', check_num(15))
-		assert_equal('fizzbuzz', check_num(30))
-	end
-
-	def test_should_print_sequence
-		assert_equal('1,2,fizz,4,buzz,fizz,7,8,fizz,buzz', print(1,10))
-	end
-
-
-
 
 end
